@@ -1,0 +1,59 @@
+:root{
+    --melon:#ffa8a9;
+    --pink: #f786aa;
+    --dark-violet:#a14a76;
+    --grey:#cdb2ab;
+}
+*{
+    background-color: var(--dark-violet);
+}
+body{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto auto auto;
+    height: 100vh;
+    width: 98vw;
+}
+
+#result{
+    grid-area: 3/2/4/3;
+    justify-self: center;
+    align-self: center;
+    font-size: 3em;
+    color: var(--melon);
+    font-weight: bold;
+}
+h1{
+    grid-area:1/2/2/3 ;
+    align-self: center;
+    justify-self: center;
+    font-size: 3.5em;
+    color: var(--melon);
+    font-weight:800;
+}
+.entry{
+    grid-area: 2/2/3/3;
+    justify-self: center;
+    align-self: center;
+    box-sizing: border-box;
+}
+.entry #text-input, #check-btn{
+    width: 20em;
+    height: 4em;
+    border: none;
+    padding: 0px;
+    font-size: 1.5em;
+    color: var(--dark-violet);
+    font-weight: bold;
+    
+}
+.entry #text-input{
+    background-color: var(--grey);
+    border-color: var(--melon);
+    outline-color: var(--pink);
+    outline-width: 10px;
+    text-align: center;
+}
+.entry #check-btn{
+    background-color: var(--pink);
+}
